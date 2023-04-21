@@ -1,5 +1,8 @@
 {
   "Тестовый пример": "Test example",
   "Язык": "English",
-  "Главная": "Main"
+  "Главная": "Main",
+  "Страница не найдена": "Page not found",
+  "Произошла ошибка": "Something went wrong",
+  "Обновить страницу": "Refresh page"
 }

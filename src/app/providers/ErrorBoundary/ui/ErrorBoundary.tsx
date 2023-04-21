@@ -1,6 +1,5 @@
 import React, { ErrorInfo, ReactNode, Suspense } from 'react';
 import { PageError } from 'widgets/PageError';
-import { PageLoader } from 'shared/ui/PageLoader/PageLoader';
 
 interface ErrorBoundaryProps{
     children: ReactNode
@@ -24,6 +23,7 @@ class ErrorBoundary
 
     componentDidCatch(error: Error, errorInfo: ErrorInfo) {
         // Можно также сохранить информацию об ошибке в соответствующую службу журнала ошибок
+        // eslint-disable-next-line no-console
         console.log(error, errorInfo);
     }
 

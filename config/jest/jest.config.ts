@@ -1,3 +1,6 @@
+// @ts-ignore
+import path from 'path';
+
 const config = {
     clearMocks: true,
     testEnvironment: 'jsdom',
@@ -6,6 +9,10 @@ const config = {
     ],
     moduleDirectories: [
         'node_modules',
+        'src',
+    ],
+    modulePaths: [
+        '<rootDir>src',
     ],
     moduleFileExtensions: [
         'js',
@@ -19,6 +26,12 @@ const config = {
         '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
     ],
     rootDir: '../../',
+    setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
+    moduleNameMapper: {
+        '^.+\\.(css|less|scss)$': 'identity-obj-proxy',
+        '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+        '@/(.*)': '<rootDir>/src/$1',
+    },
 };
 
 export default config;

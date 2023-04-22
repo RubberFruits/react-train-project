@@ -1,12 +1,7 @@
-import { classNames } from 'shared/lib/classNames/classNames';
-import cls from './Loader.module.scss';
+import './Loader.scss';
 
-interface LoaderProps {
-  className?: string;
-}
-
-export const Loader = ({ className }: LoaderProps) => (
-    <div className={classNames(cls.Loader, {}, [className])}>
+export const Loader = () => (
+    <div>
         <div className="lds-circle">
             <div />
         </div>

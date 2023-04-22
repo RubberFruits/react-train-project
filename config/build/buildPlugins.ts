@@ -1,7 +1,7 @@
-import HTMLWebpackPlugin from 'html-webpack-plugin';
-import webpack from 'webpack';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import ReactRefreshPlugin from '@pmmmwh/react-refresh-webpack-plugin';
+import * as HTMLWebpackPlugin from 'html-webpack-plugin';
+import * as webpack from 'webpack';
+import * as MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import * as ReactRefreshPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { BuildOptions } from './types/config';
 

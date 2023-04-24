@@ -1,10 +1,10 @@
 import { ButtonHTMLAttributes, FC } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { transform } from '@babel/core';
 import cls from './Button.module.scss';
 
 export enum AppButtonTheme {
   CLEAR = 'clear',
+  CLEAR_INVERTED = 'clearInverted',
   SECONDARY = 'secondary',
   OUTLINE = 'outline',
   BACKGROUND = 'background',

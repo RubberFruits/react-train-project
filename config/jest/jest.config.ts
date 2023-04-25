@@ -2,6 +2,9 @@
 import path from 'path';
 
 const config = {
+    globals: {
+        __IS_DEV__: true,
+    },
     clearMocks: true,
     testEnvironment: 'jsdom',
     coveragePathIgnorePatterns: [

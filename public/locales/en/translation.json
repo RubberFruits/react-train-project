@@ -5,5 +5,8 @@
   "Главная": "Main",
   "Страница не найдена": "Page not found",
   "Произошла ошибка": "Something went wrong",
-  "Обновить страницу": "Refresh page"
+  "Обновить страницу": "Refresh page",
+  "Войти": "Log in",
+  "increment": "increment",
+  "decrement": "decrement"
 }

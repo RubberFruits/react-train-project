@@ -42,3 +42,9 @@
         transform: scale(0.2);
     }
 }
+
+.Modal.app_dark_theme {
+    .content {
+        background: var(--inverted-bg-color);
+    }
+}

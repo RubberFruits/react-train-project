@@ -8,5 +8,7 @@
   "Обновить страницу": "Refresh page",
   "Войти": "Log in",
   "increment": "increment",
-  "decrement": "decrement"
+  "decrement": "decrement",
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter password"
 }

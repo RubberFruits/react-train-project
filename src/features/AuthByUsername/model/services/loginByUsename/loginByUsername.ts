@@ -14,7 +14,7 @@ enum LoginErrors {
     SERVER_ERROR = ''
 }
 
-export const loginByUsername = createAsyncThunk<User, LoginByUsernameProps>(
+export const loginByUsername = createAsyncThunk<User, LoginByUsernameProps, { rejectValue:string}>(
     'login/loginByUsername',
     async (authData, thunkAPI) => {
         try {

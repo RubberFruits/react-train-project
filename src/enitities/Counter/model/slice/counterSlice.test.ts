@@ -12,7 +12,7 @@ describe('counterSlice.test', () => {
     });
 
     test('increment', () => {
-        const state:CounterSchema = {
+        const state: CounterSchema = {
             value: 10,
         };
 

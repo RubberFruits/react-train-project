@@ -3,6 +3,9 @@ import StyleDecorator from '../../src/shared/config/storybook/StyleDecorator/Sty
 import ThemeDecorator from '../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from '../../src/app/providers/ThemeProvider';
 import RouteDecorator from '../../src/shared/config/storybook/RouteDecorator/RouteDecorator';
+import {
+    TranslationDecorator,
+} from '../../src/shared/config/storybook/TranslationDecorator/TranslationDecorator';
 
 export const parameters = {
     parameters: {

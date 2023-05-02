@@ -1,9 +1,25 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" },
-    { "id": 2, "title": "json-server", "author": "typicode" },
-    { "id": 3, "title": "json-server", "author": "typicode" },
-    { "id": 4, "title": "json-server", "author": "typicode" }
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 3,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 4,
+      "title": "json-server",
+      "author": "typicode"
+    }
   ],
   "comments": [
     {
@@ -20,6 +36,13 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "first": "Владимир",
+    "lastname": "Тестовиков",
+    "age": "77",
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Pavlodar",
+    "username": "admin",
+    "avatar": "https://kedem.ru/photo/articles/2017/02/kurinoe-file-v-duhovke-01.jpg"
   }
 }

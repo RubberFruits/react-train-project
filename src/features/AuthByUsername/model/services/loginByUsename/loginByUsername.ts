@@ -3,6 +3,7 @@ import { User } from 'enitities/User/model/types/user';
 import { userActions } from 'enitities/User';
 import { USER_LOCALSTORAGE_KEY } from 'shared/const/localstorage';
 import { ThunkConfig } from 'app/providers/StoreProvider';
+import { ThunkExtraArg } from 'app/providers/StoreProvider/config/StateSchema';
 
 interface LoginByUsernameProps {
     username: string
@@ -14,7 +15,11 @@ enum LoginErrors {
     SERVER_ERROR = ''
 }
 
-export const loginByUsername = createAsyncThunk<User, LoginByUsernameProps, ThunkConfig<string>>(
+export const loginByUsername = createAsyncThunk<
+    User,
+    LoginByUsernameProps,
+    ThunkConfig<string>
+>(
     'login/loginByUsername',
     async (authData, thunkAPI) => {
         const {
@@ -32,7 +37,6 @@ export const loginByUsername = createAsyncThunk<User, LoginByUsernameProps, Thun
 
             localStorage.setItem(USER_LOCALSTORAGE_KEY, JSON.stringify(response.data));
             dispatch(userActions.setAuthData(response.data));
-            extra.navigate('/about');
             return response.data;
         } catch (e) {
             console.log(e);
